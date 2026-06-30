@@ -31,9 +31,6 @@ class ProductPage(BasePage):
     def open_cart(self):
         self.shopping_cart.click()
 
-    def sort_by(self, option):
-        self.sort_dropdown.select_option(option)
-
     def get_product_count(self):
         return self.product_list.count()
 
