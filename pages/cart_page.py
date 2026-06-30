@@ -10,11 +10,8 @@ class CartPage(BasePage):
         self.cart_items = page.locator(".cart_item")
         self.product_names = page.locator(".inventory_item_name")
         self.product_prices = page.locator(".inventory_item_price")
-        self.product_descriptions = page.locator(".inventory_item_desc")
         self.remove_backpack_button = page.locator("#remove-sauce-labs-backpack")
 
-    def goto_cart_page(self):
-        self.open("https://www.saucedemo.com/cart.html")
 
     def continue_shopping(self):
         self.continue_shopping_button.click()
